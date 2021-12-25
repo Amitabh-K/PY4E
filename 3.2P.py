@@ -21,21 +21,36 @@
 # < 0.6 F
 # If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.
 
-try:
-    num = float(input('enter number between 0.0 to 1.0: '))
-except:
-    print("Enter Numeric Value")
-if num >= 1 :
-    print('Should be less than 1.0')
-elif num >= 0.9 :
-    print('A')
-elif num >= .8:
-    print('B')
-elif num >= .7:
-    print('C')
-elif num >= .6 :
-    print('B')
-elif num < .6 and num > 0.0 :
-    print('D')
-else:
-    print('Cannot be negative')
+# try:
+#     num = float(input('enter number between 0.0 to 1.0: '))
+# except:
+#     print("Enter Numeric Value")
+# if num >= 1 :
+#     print('Should be less than 1.0')
+# elif num >= 0.9 :
+#     print('A')
+# elif num >= .8:
+#     print('B')
+# elif num >= .7:
+#     print('C')
+# elif num >= .6 :
+#     print('B')
+# elif num < .6 and num > 0.0 :
+#     print('D')
+# else:
+#     print('Cannot be negative')
+
+
+def computepay(hrs, rate):
+
+    if (hrs <= 40):
+        print((hrs * rate))
+    else:
+        print((40 + (hrs-40)*1.5)*rate)
+    return
+
+
+hrs = float(input('Please enter hours ' ))
+rate = float(input('Please enter rate ' ))
+
+computepay(hrs, rate)
